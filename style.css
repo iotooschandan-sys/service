@@ -67,7 +67,7 @@ body{
 }
 
 .hero-content h1{
-  font-size:86px;
+  font-size:80px;
   line-height:.95;
   letter-spacing:-4px;
   font-weight:600;
@@ -538,6 +538,13 @@ body{
     0 0 40px rgba(0,0,0,0.35);
 }
 
+
+.wrapper1 {
+    display: flex;
+    align-items: center;
+    padding: 40px 0 0 0;
+    justify-content: end;
+}
 /* =========================
    ANIMATION
 ========================= */
@@ -558,6 +565,52 @@ body{
   50%{
     opacity:1;
   }
+}
+
+/* ====================  my css ============ */
+
+.img-wrap img {
+    width: 220px;
+    border-radius: 12px;
+}
+
+img.p1-img {
+    position: absolute;
+    right: 0;
+    bottom: -28px;
+}
+.img-wrap {
+    position: relative;
+}
+
+.sm-cardimg img {
+    width: 100%;
+    height: 160px;
+    border-radius: 12px;
+}
+
+
+
+
+.card-box {
+    width: 135px;
+    height: 135px;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 15px rgba(255,255,255,0.08);
+}
+
+.card-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+.connector{
+    width:35px;
+    height:2px;
+    background:rgba(255,255,255,0.25);
 }
 
 /* =========================
@@ -616,54 +669,90 @@ body{
   }
 }
 
-/* ====================  my css ============ */
 
+@media (max-width:575px){
+  .hero-section {
+    padding: 40px 24px 160px;
+}
+.services-section {
+    padding: 40px 24px 80px;
+}
+.service-card {
+    padding: 10px;
+}
 .img-wrap img {
-    width: 220px;
-    border-radius: 12px;
+    width: 150px !important;
 }
-
-img.p1-img {
-    position: absolute;
-    right: 0;
-    bottom: -28px;
+.service-content {
+    bottom: 65px;
 }
-.img-wrap {
-    position: relative;
+.service-content h2 {
+    font-size: 30px;
 }
-
-.sm-cardimg img {
-    width: 100%;
-    height: 160px;
-    border-radius: 12px;
+.small {
+    min-height: 340px;
 }
-
-
-
+.wide {
+    min-height: 340px;
+}
 .wrapper1 {
-    display: flex;
-    align-items: center;
-    padding: 40px 0 0 0;
-    justify-content: end;
+    display: grid;
+    padding: 10px;
+    justify-content: center;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
-
 .card-box {
-    width: 135px;
-    height: 135px;
-    border-radius: 18px;
-    overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.1);
-    box-shadow: 0 0 15px rgba(255,255,255,0.08);
+    width: 120px;
+    height: 120px;
+}
+.connector {
+    display: none;
 }
 
-.card-box img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+.xl {
+    height: 480px;
+}
+.xlmb {
+    height: 315px !important;
+}
+.hero-content h1 {
+    font-size: 32px;
 }
 
-.connector{
-    width:35px;
-    height:2px;
-    background:rgba(255,255,255,0.25);
+.large {
+    min-height: 315px;
+}
+.medium {
+    min-height: 370px;
+}
+.service-content {
+    left: 10px;
+}
+.service-content {
+    bottom: 24px;
+    padding-right: 10px;
+}
+}
+
+@media (min-width:375px) and (max-width:769px){
+  .hero-section {
+    padding: 50px 24px 160px;
+}
+.img-wrap img {
+    width: 290px;
+}
+.sm-cardimg img {
+    height: 190px;
+    object-fit: cover;
+}
+.small {
+    min-height: 345px;
+}
+.wide {
+    min-height: 375px;
+}
+.medium {
+    min-height: 350px;
+}
 }
