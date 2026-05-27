@@ -589,8 +589,18 @@ img.p1-img {
     border-radius: 12px;
 }
 
+.trusted {
+    margin-top: 45px;
+}
 
-
+.trusted p {
+    max-width: 980px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #fff;
+    text-align: center;
+}
 
 .card-box {
     width: 135px;
